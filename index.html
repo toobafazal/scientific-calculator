@@ -21,33 +21,33 @@
                 <center>Natural 7x4566 </center>
 
                 <div id="box-one-middle">
-                    <input type="text">
+                    <input type="text" id="result"/>
                 </div>
                 <span id="box-one-bottom">
-                    <button>CONST</button>
-                    <button>cotx</button>
-                    <button>acotx</button>
-                    <button>ON</button>
+                    <button onclick="cube()"> <sup>3</sup>&#8730;</button>
+                    <button onclick="four()"><sup>4</sup>&#8730;</button>
+                    <button onclick="five()"><sup>5</sup>&#8730;</button>
+                    <button onclick="square()">&#8730;</button>
 
                 </span>
             </div>
             <div class="box-two">
                 <span>
                     <small>x<sup>2</sup></small>
-                    <small>x<sup>2</sup></small>
-                    <small>x<sup>2</sup></small>
-                    <small>x<sup>2</sup></small>
-                    <small>x<sup>2</sup></small>
-                    <small>x<sup>2</sup></small>
+                    <small>x<sup>3</sup></small>
+                    <small>x<sup>4</sup></small>
+                    <small>x<sup>5</sup></small>
+                    <small>x<sup>6</sup></small>
+                    <small>x<sup>7</sup></small>
 
                 </span>
                 <span>
-                    <button>x<sup>2</sup></button>
-                    <button>x<sup>3</sup></button>
-                    <button>x<sup>4</sup></button>
-                    <button>x<sup>5</sup></button>
-                    <button>x<sup>6</sup></button>
-                    <button>x<sup>7</sup></button>
+                    <button onclick="x2()">x<sup>2</sup></button>
+                    <button  onclick="x3()">x<sup>3</sup></button>
+                    <button  onclick="x4()">x<sup>4</sup></button>
+                    <button  onclick="x5()">x<sup>5</sup></button>
+                    <button  onclick="x6()">x<sup>6</sup></button>
+                    <button  onclick="x7()">x<sup>7</sup></button>
 
                 </span>
 
@@ -61,12 +61,12 @@
                 </span>
 
                 <span>
-                    <button>x<sup>2</sup></button>
-                    <button>log</button>
-                    <button>In</button>
-                    <button>e</button>
-                    <button>cot</button>
-                    <button>cotx</button>
+                    <button onclick="x9()">x<sup>9</sup></button>
+                    <button onclick="log()">log</button>
+                    <button onclick="ln()">ln</button>
+                    <button onclick="e()">e</button>
+                    <button onclick="cot()">cot</button>
+                    <button onclick="coth()">coth</button>
                 </span>
 
                 <span>
@@ -80,12 +80,12 @@
                 </span>
 
                 <span>
-                    <button>asinh</button>
-                    <button>asin</button>
-                    <button>sinh</button>
-                    <button>sin</button>
-                    <button>cos</button>
-                    <button>cosh</button>
+                    <button onclick="asinh()">asinh</button>
+                    <button  onclick="asin()">asin</button>
+                    <button  onclick="sinh()">sinh</button>
+                    <button  onclick="sin()">sin</button>
+                    <button  onclick="cos()">cos</button>
+                    <button  onclick="cosh()">cosh</button>
                 </span>
 
 
@@ -99,12 +99,12 @@
 
                 </span>
                 <span>
-                    <button>acos</button>
-                    <button>acosh</button>
-                    <button>tan</button>
-                    <button>tanh</button>
-                    <button>atan</button>
-                    <button>atanh</button>
+                    <button onclick="acos()">acos</button>
+                    <button onclick="acosh()">acosh</button>
+                    <button onclick="tan()">tan</button>
+                    <button onclick="tanh()">tanh</button>
+                    <button onclick="atan()">atan</button>
+                    <button onclick="atanh()">atanh</button>
 
                 </span>
 
@@ -122,10 +122,10 @@
 
     </span>
     <span>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>DEL</button>
+        <button onclick="display('7')">7</button>
+        <button  onclick="display('8')">8</button>
+        <button  onclick="display('9')">9</button>
+        <button onclick="del( )">DEL</button>
         <button>AC</button>
 
     </span>
@@ -137,11 +137,11 @@
         <small>nCr</small>
     </span>
     <span>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>x</button>
-        <button>/</button>
+        <button  onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('*')" >x</button>
+        <button onclick="display('/')">&#247;</button>
 
     </span>
     <span>
@@ -152,11 +152,11 @@
         <small>a+bi</small>
     </span>
     <span>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>-</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('+')">+</button>
+        <button onclick="display('-')">-</button>
 
     </span>
     <span>
@@ -167,11 +167,11 @@
         <small>Re-Im</small>
     </span>
     <span>
-        <button>0</button>
-        <button>.</button>
+        <button onclick="display('0')">0</button>
+        <button onclick="display('.')">.</button>
         <button>EXP</button>
-        <button>ANS</button>
-        <button>=</button>
+        <button onclick="display('ANS')">ANS</button>
+        <button onclick="result()"> = </button>
 
     </span>
     
